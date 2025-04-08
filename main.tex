@@ -1,0 +1,174 @@
+%-------------------------
+% Resume in Latex
+% Author : Yung Hin Tse
+% Based off of: https://github.com/sb2nov/resume
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generated pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{#1 \vspace{-2pt}}
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small #3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+  \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small #1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+  \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small #1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+\begin{document}
+
+%----------HEADING----------
+\begin{center}
+    \textbf{\Huge \scshape Yung Hin Tse} \\ \vspace{1pt}
+    \small 623-396-7519 $|$ 
+   {\small{yunghint@asu.edu}} $|$ 
+   {\small{linkedin.com/in/thomasyht}} $|$ 
+   {\small{Have a U.S. Work Authorization}}
+\end{center}
+
+%-----------SUMMARY-----------
+\section*{Summary}
+\begin{itemize}[leftmargin=*, label={}]
+    \item Computer Science and upcoming Mathematics (Stats) undergrad double major at ASU. Skilled in Python, Java, and C/C++ for data-driven solutions. Passionate about applying advanced math and statistics to financial modeling, risk management, and algorithmic trading. Looking for a quantitative research/analyst/developer intern role while remaining open to broader software engineering and AI.
+\end{itemize}
+
+%-----------EDUCATION-----------
+\section{Education}
+\resumeSubHeadingListStart
+    \resumeSubheading
+      {Arizona State University, Tempe, AZ}{Expected Grad: Dec. 2028}
+      {Bachelor of Science in Computer Science}{GPA: 4.00/4.00} 
+    \resumeItemListStart
+      \resumeItem{Currently enrolled in \textbf{MITx’s Mathematical Methods for Quantitative Finance}, studying advanced stochastic processes, time series models, and financial mathematics in Python to further strengthen my quant modeling skills.}
+    \resumeItemListEnd      
+    \resumeSubheading
+      {Hong Kong University of Science and Technology, Hong Kong SAR}{Sep. 2021 -- Jan. 2022}
+      {Bachelor of Science in Engineering with Extended Major in Artificial Intelligence}{GPA: 3.04/4.00}
+    \resumeItemListStart
+        \resumeItem{Awards: JUPAS Scholarship (HK\$10,000) (Fall 2021)}
+        \resumeItem{Awards: CityU HK Scholarships for Hong Kong Talents - Dean Scholarships (HK\$30,000 per annum)}
+    \resumeItemListEnd
+\resumeSubHeadingListEnd
+
+%-----------TECHNICAL SKILLS-----------
+\section{Technical Skills}
+\resumeSubHeadingListStart
+  \begin{description}[leftmargin=0cm, style=unboxed, itemsep=0pt, topsep=0pt, parsep=0pt, partopsep=0pt]
+    \item[\textbf{Languages:}] Python, Java, C/C++, SQL (Postgres), JavaScript, HTML/CSS, R, Bash
+    \item[\textbf{Frameworks:}] Flask, JQuery, WordPress, Agile, TensorFlow, NLTK, TextBlob, Keras, scikit - learn
+    \item[\textbf{Developer Tools:}] Git, Google Cloud Platform, VS Code, Visual Studio, PyCharm, IntelliJ, Eclipse, Vim
+    \item[\textbf{Libraries:}] pandas, NumPy, Matplotlib, Seaborn, RandomForest, SciPy, Solana
+    \item[\textbf{Certifications:}] Agile Development, Data Manipulation with Python and SQL, Web Development with Frontend Tools, Quantitative Finance \& Algorithmic Trading in Python
+  \end{description}
+\resumeSubHeadingListEnd
+
+%-----------PROJECTS-----------
+\section{Projects}
+\resumeSubHeadingListStart
+    \resumeProjectHeading
+          {\textbf{Changing the World: Personal Secretary} $|$ \emph{Python}}{Jan. 2025 -- Feb. 2025 }
+    \resumeItemListStart
+        \resumeItem{Collaborated to design and optimize the business model for a personal scheduling app organizing stakeholder meetings that contributed to a 20\% improvement in scheduling efficiency and streamlined user processes.}
+        \resumeItem{Leveraged ChatGPT-API and analytics to streamline processes and reduce response time by 35\%.}
+    \resumeItemListEnd
+    \resumeProjectHeading
+          {\textbf{PwC Web3 Global Business Case Challenge}}{Sep. 2023 -- Nov. 2023}
+    \resumeItemListStart
+        \resumeItem{Secured 1st Runner-up in the Global Business Case Challenge by demonstrating exceptional problem-solving skills and effective teamwork.} 
+        \resumeItem{Leveraged analytical proficiency to excel in high-stakes environments, securing PwC Summer internships and advancing key financial and consulting competencies.}
+        \resumeItem{Applied advanced knowledge in data security and web3 services, gained through targeted workshops and discussions, to develop more secure decentralized applications and streamline global business operations.}
+    \resumeItemListEnd          
+\resumeSubHeadingListEnd
+
+%-----------EXPERIENCE-----------
+\section{Experience}
+\resumeSubHeadingListStart
+    \resumeSubheading
+      {Software Engineer Intern}{Feb. 2025 -- Present}
+      {ClearCast LLC}{}
+    \resumeItemListStart
+        \resumeItem{Developed and maintained company website, resulting in a 50\% increase in user engagement over six months.}
+        \resumeItem{Boosted mapping efficiency by 100\% through advanced Pygame integrations, enabling faster and more accurate real-time simulations.}
+        \resumeItem{Collaborated with cross-functional teams to integrate advanced software solutions into autonomous swarm robotics, improving emergency response unit efficiency.}        
+    \resumeItemListEnd
+    \resumeSubheading
+      {STEM Private Tutor}{Jun. 2021 -- Jan. 2022}
+      {Hong Kong Tutor Association}{}
+    \resumeItemListStart
+        \resumeItem{Delivered 200+ hours of one-on-one STEM lessons to 15+ students, increasing average test scores by 20\%, by designing individualized lesson plans and interactive projects.}
+    \resumeItemListEnd
+
+\resumeSubHeadingListEnd
+
+
+
+\end{document}
